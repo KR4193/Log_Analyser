@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATF</title>
+    <style>
+        /* Simple style to hide the reason input and radio group initially */
+        .reason-input, .issue-radio-group {
+            display: none;
+        }
+    </style>
+    <script>
+        // Function to toggle the visibility of the reason input and radio group based on checkbox selection
+        function toggleReasonInput(checkbox, reasonInputId, radioGroupId) {
+            var reasonInput = document.getElementById(reasonInputId);
+            var radioGroup = document.getElementById(radioGroupId);
+            if (checkbox.checked) {
+                reasonInput.style.display = 'none';
+                radioGroup.style.display = 'none';
+                // Clear radio button selection if checkbox is checked
+                var radios = radioGroup.querySelectorAll('input[type="radio"]');
+                radios.forEach(radio => radio.checked = false);
+            } else {
+                radioGroup.style.display = 'block';
+            }
+        }
+
+        // Function to enable the reason input when a radio button is selected
+        function enableReasonInput(radio, reasonInputId) {
+            var reasonInput = document.getElementById(reasonInputId);
+            if (radio.checked) {
+                reasonInput.style.display = 'inline';
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <table border="1">
+            <tr>
+                <th>Test Suite</th>
+                <th>Test Case</th>
+                <th>Test Description</th>
+                <th>Classification</th>
+                <th>Reasoning</th>
+                <th>Correct?</th>
+                <th>Issue Type</th>
+                <th>Correction (if "No")</th>
+            </tr>
+            {% for d in data %}
+            <tr>
+                <td>
+                    {{d.test_suite}}
+                    <input type="hidden" name="test_suite-{{loop.index}}" value="{{d.test_suite}}">
+                </td>
+                <td>
+                    {{d.test_case}}
+                    <input type="hidden" name="test_case-{{loop.index}}" value="{{d.test_case}}">
+                </td>
+                <td>
+                    {{d.test_description}}
+                    <input type="hidden" name="test_description-{{loop.index}}" value="{{d.test_description}}">
+                </td>
+                <td>
+                    {{d.classification}}
+                    <input type="hidden" name="classification-{{loop.index}}" value="{{d.classification}}">
+                </td>
+                <td>
+                    {{d.reasoning}}
+                    <input type="hidden" name="reasoning-{{loop.index}}" value="{{d.reasoning}}">
+                </td>
+                <td>
+                    <input type="checkbox" id="correct-{{loop.index}}" name="correct-{{loop.index}}" checked
+                           onclick="toggleReasonInput(this, 'reason-input-{{loop.index}}', 'issue-radio-group-{{loop.index}}')">
+                    Yes
+                </td>
+                <td>
+                    <div id="issue-radio-group-{{loop.index}}" class="issue-radio-group">
+                        <label><input type="radio" name="issue-{{loop.index}}" value="Product issue"
+                                      onclick="enableReasonInput(this, 'reason-input-{{loop.index}}')"> Product issue</label><br>
+                        <label><input type="radio" name="issue-{{loop.index}}" value="Setup issue"
+                                      onclick="enableReasonInput(this, 'reason-input-{{loop.index}}')"> Setup issue</label><br>
+                        <label><input type="radio" name="issue-{{loop.index}}" value="Script issue"
+                                      onclick="enableReasonInput(this, 'reason-input-{{loop.index}}')"> Script issue</label>
+                    </div>
+                </td>
+                <td>
+                    <input type="text" id="reason-input-{{loop.index}}" name="reason-{{loop.index}}" class="reason-input" placeholder="Enter reason here">
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

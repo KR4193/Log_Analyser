@@ -1,0 +1,1464 @@
+Feb 24 19:12:06+0000 __main__ D: Creating resource pool.
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Loading resources from cfg file: '/workspace/cfg/resources.conf'
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Loading resource   : link_os_connector.1
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Loading resource   : weblink.1
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Loading resource   : http_echo_server.1
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Loading resource   : ntp_server.1
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Loading resource   : manufacturing_region_code_password
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Loading resource   : firmware_directory
+Feb 24 19:12:06+0000 atf.resource.LocalResourcePool D: Garbage collecting old locks.
+Feb 24 19:12:06+0000 atf.librarian.TestLibraryManager D: Init.
+Feb 24 19:12:06+0000 __main__ D: Attempting to load tests from atf/test-groups/ipp.txt
+Feb 24 19:12:06+0000 atf.librarian.TestLibraryManager I: Beginning test enumeration...
+Feb 24 19:12:06+0000 atf.librarian.TestLibraryManager I: Test enumeration complete!
+Feb 24 19:12:06+0000 __main__ I: Loaded 8 tests from atf/test-groups/ipp.txt
+Feb 24 19:12:06+0000 __main__ I: Starting Zebra Mobile EVT Test Executor
+Feb 24 19:12:06+0000 __main__ I: Command line executor version 1.0.0
+Feb 24 19:12:06+0000 __main__ I: Framework version 5.9.8
+Feb 24 19:12:06+0000 __main__ I: libzebra version 6.4.3
+Feb 24 19:12:06+0000 atf.CommandLineExecutor I: Gathering host information.
+Feb 24 19:12:06+0000 atf.CommandLineExecutor I: Executing with DUT 'SMOKE-ZT231-002'.
+Feb 24 19:12:06+0000 atf.CommandLineExecutor I: Querying DUT.
+Feb 24 19:12:06+0000 atf.CommandLineExecutor I: Connecting to DUT for initial query.
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:12:06+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:12:06+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Collected: b'V97.21.38ZP76213_MFG-UNSECURED'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: getvar b'appl.name' = b'V97.21.38ZP76213_MFG-UNSECURED'
+Feb 24 19:12:06+0000 atf.CommandLineExecutor D: b'appl.name' = V97.21.38ZP76213_MFG-UNSECURED
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Collected: b'N97_21_30P71833-v18'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: getvar b'appl.bootblock' = b'N97_21_30P71833-v18'
+Feb 24 19:12:06+0000 atf.CommandLineExecutor D: b'appl.bootblock' = N97_21_30P71833-v18
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Collected: b'76213'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: getvar b'appl.svn_id' = b'76213'
+Feb 24 19:12:06+0000 atf.CommandLineExecutor D: b'appl.svn_id' = 76213
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Collected: b'ZT231'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: getvar b'device.product_name' = b'ZT231'
+Feb 24 19:12:06+0000 atf.CommandLineExecutor D: b'device.product_name' = ZT231
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Collected: b'T3J214200164'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: getvar b'device.unique_id' = b'T3J214200164'
+Feb 24 19:12:06+0000 atf.CommandLineExecutor D: b'device.unique_id' = T3J214200164
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Collected: b'?'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: getvar b'manufacturing.device_pcc' = b'?'
+Feb 24 19:12:06+0000 atf.CommandLineExecutor D: b'manufacturing.device_pcc' = ?
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: Collected: b'hybrid_xml_zpl'
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: getvar b'device.languages' = b'hybrid_xml_zpl'
+Feb 24 19:12:06+0000 atf.CommandLineExecutor D: Querying ZPL information from DUT.
+Feb 24 19:12:06+0000 atf.unity.SocketConnection D: setvar b'device.languages' = b'zpl'
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: Collected: b'hybrid_xml_zpl'
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: getvar b'device.languages' = b'hybrid_xml_zpl'
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: Collected: b'ZT231-200dpi,V97.21.38ZP76213_MFG-UNSECURED,8,32752KB'
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: Collected: b'  +22.0               DARKNESS          \r\n  2.0 IPS             PRINT SPEED       \r\n  +000                TEAR OFF ADJUST   \r\n  TEAR OFF            PRINT MODE        \r\n  CONTINUOUS          MEDIA TYPE        \r\n  TRANSMISSIVE        SENSOR SELECT     \r\n  DIRECT-THERMAL      PRINT METHOD      \r\n  568                 PRINT WIDTH       \r\n  1200                LABEL LENGTH      \r\n  P112216-10/00106 2  PRINT HEAD ID     \r\n  15.0IN   380MM      MAXIMUM LENGTH    \r\n  MAINT. OFF          EARLY WARNING     \r\n  CONNECTED           USB COMM.         \r\n  BIDIRECTIONAL       PARALLEL COMM.    \r\n  RS232               SERIAL COMM.      \r\n  9600                BAUD              \r\n  8 BITS              DATA BITS         \r\n  NONE                PARITY            \r\n  XON/XOFF            HOST HANDSHAKE    \r\n  NONE                PROTOCOL          \r\n  NORMAL MODE         COMMUNICATIONS    \r\n  <~>  7EH            CONTROL PREFIX    \r\n  <^>  5EH            FORMAT PREFIX     \r\n  <,>  2CH            DELIMITER CHAR    \r\n  ZPL II              ZPL MODE          \r\n  INACTIVE            COMMAND OVERRIDE  \r\n  NO MOTION           MEDIA POWER UP    \r\n  NO MOTION           HEAD CLOSE        \r\n  80%                 BACKFEED          \r\n  +000                LABEL TOP         \r\n  +0000               LEFT POSITION     \r\n  OFF                 APPLICATOR PORT   \r\n  ENABLED             ERROR ON PAUSE    \r\n  PULSE MODE          START PRINT SIG   \r\n  DISABLED            REPRINT MODE      \r\n  025                 WEB SENSOR        \r\n  025                 MEDIA SENSOR      \r\n  255                 TAKE LABEL        \r\n  027                 MARK SENSOR       \r\n  027                 MARK MED SENSOR   \r\n  012                 TRANS GAIN        \r\n  000                 TRANS BASE        \r\n  100                 TRANS LED         \r\n  002                 MARK GAIN         \r\n  090                 MARK LED          \r\n  DPCSWFXM            MODES ENABLED     \r\n  ........            MODES DISABLED    \r\n   832 8/MM FULL      RESOLUTION        \r\n  7.3                 LINK-OS VERSION   \r\n  V97.21.38ZP76213_MF FIRMWARE          \r\n  1.3                 XML SCHEMA        \r\n  7.0.4 0.0           HARDWARE ID       \r\n  32752k...........R: RAM               \r\n  65536k...........E: ONBOARD FLASH     \r\n  NONE                FORMAT CONVERT    \r\n  FW VERSION          IDLE DISPLAY      \r\n  02/24/25            RTC DATE          \r\n  19:12               RTC TIME          \r\n  DISABLED            ZBI               \r\n  2.1                 ZBI VERSION       \r\n  READY               ZBI STATUS        \r\n  334,994 LABELS      NONRESET CNTR     \r\n  334,994 LABELS      RESET CNTR1       \r\n  334,994 LABELS      RESET CNTR2       \r\n  43,011 IN           NONRESET CNTR     \r\n  43,011 IN           RESET CNTR1       \r\n  43,011 IN           RESET CNTR2       \r\n  109,249 CM          NONRESET CNTR     \r\n  109,249 CM          RESET CNTR1       \r\n  109,249 CM          RESET CNTR2       \r\n  *** EMPTY           SLOT 1            \r\n  0                   MASS STORAGE COUNT\r\n  0                   HID COUNT         \r\n  OFF                 USB HOST LOCK OUT \r\n'
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: Collected: (b'\x02030,0,0,1200,000,0,0,0,000,0,0,0\x03\r\n\x02128,0,0,0,0,2,4,0,00000000,1,000\x03\r\n\x020000,0\x03\r\n', b'\x020000,0\x03\r\n', b'0000,0')
+Feb 24 19:12:07+0000 atf.CommandLineExecutor D: Querying EPL information from DUT.
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: setvar b'device.languages' = b'epl_zpl'
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: Collected: b'epl_zpl'
+Feb 24 19:12:07+0000 atf.unity.SocketConnection D: getvar b'device.languages' = b'epl_zpl'
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: Collected: b'ZTC ZT231-203dpi ZPL\r\nV97.21.38ZP76213_MFG-UNSECURED\r\nS/N: T3J214200164\r\nHEAD    usage =            0"\r\nPRINTER usage =       43,011"\r\nSerial Port: 96,N,8,1\r\nPage Mode\r\nRAM size: 31981568\r\nFmem used: 0 (bytes)\r\nGmem used: 0\r\nEmem used: 0\r\nAvailable: 62599168\r\nI8,0,001 i0 JF WY\r\nS2 D11 R264,000 ZB UN \r\nq568 Q300,0 Ymax:7140 eR$,0\r\nOption:D\r\n00 05 31\r\n\r\nDate:02-24-25\r\nTime:19:12:04\r\n'
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: setvar b'device.languages' = b'hybrid_xml_zpl'
+Feb 24 19:12:08+0000 atf.CommandLineExecutor I: DUT query complete. Disconnecting.
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:12:08+0000 atf.CommandLineExecutor D: Execute module: network.protocol.ipp.attributes
+Feb 24 19:12:08+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:12:08+0000 atf.filemanager.FileManager D: Source /workspace/atf/tests/network/protocol/ipp/attributes_files exists, copying files
+Feb 24 19:12:08+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:12:08+0000 atf.CommandLineExecutor D: Entering suite: IPv4IppUriAttributeTests
+Feb 24 19:12:08+0000 atf.CommandLineExecutor D: Execute suite: IPv4IppUriAttributeTests
+Feb 24 19:12:08+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:12:08+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:08+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:12:08+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:12:08+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:12:08+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:12:08+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:12:08+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:12:08+0000 atf.tools.ipp.IppFixture I: Changing IPP mode
+Feb 24 19:12:08+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipp/ipps'
+Feb 24 19:12:08+0000 atf.tools.ipp.IppFixture I: Resetting network to apply IPP changes
+Feb 24 19:12:08+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:12:08+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:12:08+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:12:09+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:12:09+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:12:19+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:12:26+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:12:26+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:12:26+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:12:26+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:12:26+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:12:26+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:12:26+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:12:26+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IPv4IppUriAttributeTests_BasicTests
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: printer_icons
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 209
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: printer_more_info
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 122
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: printer_strings_uri
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 134
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: printer_supply_info_uri
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 75
+Feb 24 19:12:26+0000 atf.CommandLineExecutor E: Unhandled <class 'ippia.errors.IppAttributeNotSupported'>: Unsupported attribute: printer-supply-info-uri
+Traceback (most recent call last):
+  File "/workspace/atf/atf/executor.py", line 1015, in case_execute
+    suite.run_case(test_case)
+  File "/workspace/atf/atf/testtypes/suite.py", line 278, in run_case
+    test_case.run(self)
+  File "/workspace/atf/atf/testtypes/case.py", line 395, in run
+    func(suite)
+  File "/workspace/atf/tests/network/protocol/ipp/attributes.py", line 627, in test_printer_supply_info_uri
+    self.ipp_fixture.assert_attribute('printer-supply-info-uri', expected)
+  File "/workspace/atf/atf/tools/ipp.py", line 191, in assert_attribute
+    actual = ipp.get_printer_attribute(attr)
+  File "/workspace/env/lib/python3.10/site-packages/ippia/client.py", line 349, in get_printer_attribute
+    raise IppAttributeNotSupported(f'Unsupported attribute: {attr}')
+ippia.errors.IppAttributeNotSupported: Unsupported attribute: printer-supply-info-uri
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : error
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Result message : Unhandled <class 'ippia.errors.IppAttributeNotSupported'>: Unsupported attribute: printer-supply-info-uri
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: printer_uri_supported
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 172
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: printer_xri_supported
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 331
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: uri_authentication_supported
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 172
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 122
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Running test: uri_security_supported
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:26+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 115
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.network.protocol.ipp.attributes.IPv4IppUriAttributeTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:12:26+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:12:26+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Writing out suite report for IPv4IppUriAttributeTests
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:12:26+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:12:26+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:12:26+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Entering suite: IPv6IppsUriAttributeTests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Execute suite: IPv6IppsUriAttributeTests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Normal validation failure encountered via assertion exception.
+Feb 24 19:12:27+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IPv6IppsUriAttributeTests_BasicTests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Writing out suite report for IPv6IppsUriAttributeTests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:12:27+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:12:27+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Entering suite: IppAttributeTests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Execute suite: IppAttributeTests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:12:27+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:12:27+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:12:27+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:12:27+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppAttributeTests_BasicTests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: attributes_supported
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 10975
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: printer-supply-info-uri missing from Get-Printer-Attributes
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: mopria-certified missing from Get-Printer-Attributes
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute smi55357-driver found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute smi55357-device-uri found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute media-ready found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute job-retain-until-supported found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute job-retain-until-interval-default found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute job-retain-until-time-supported found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute job-retain-until-interval-supported found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute media-col-ready found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: Test failure: Extra attribute job-retain-until-default found in Get-Printer-Attributes.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test ended due to assertion exception.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : failed
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Result message : Failed 11 assertions.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: configured_language
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 119
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 110
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: create_job_send_document_response_job_attributes
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 219
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 202
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 94
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 111
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 361
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 219
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: The 'job-state' standard enumeration is <IppJobState.COMPLETED: 9>, but printer returned 5
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: 'job-state-message' should have the state 'Job completed.', but contained 'Job printing.'
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test ended due to assertion exception.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : failed
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Result message : Failed 2 assertions.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: get_attributes_for_SGDs
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 97
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Collected: b''
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: getvar b'device.location' = b''
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: get_attributes_for_fixed_values
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Collected: b'203'
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: getvar b'head.resolution.in_dpi' = b'203'
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 3013
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: `job-creation-attributes-supported` attribute value ['copies', 'document-format', 'document-name', 'ipp-attribute-fidelity', 'job-hold-until', 'job-hold-until-time', 'job-name', 'job-priority', 'media', 'media-col', 'multiple-document-handling', 'orientation-requested', 'print-color-mode', 'print-content-optimize', 'print-quality', 'printer-resolution', 'output-bin', 'print-darkness', 'print-speed'] did not match expected value ['copies', 'document-format', 'document-name', 'ipp-attribute-fidelity', 'job-hold-until', 'job-hold-until-time', 'job-name', 'job-priority', 'media', 'media-col', 'multiple-document-handling', 'orientation-requested', 'output-bin', 'print-color-mode', 'print-content-optimize', 'print-quality', 'printer-resolution', 'print-darkness', 'print-speed']
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: `printer-input-tray` attribute value [b'type=sheetFeedAutoRemovableTray;mediafeed=15014;mediaxfeed=7106;maxcapacity=-2;level=-2;status=0;name=main-roll;', b'type=other;mediafeed=0;mediaxfeed=0;maxcapacity=-2;level=-2;status=0;name=auto;'] did not match expected value [b'type=sheetFeedAutoRemovableTray;mediafeed=0;mediaxfeed=0;maxcapacity=-2;level=-2;status=3;name=;', b'type=other;mediafeed=0;mediaxfeed=0;maxcapacity=-2;level=-2;status=0;name=auto;']
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: `job-hold-until-supported` attribute value ['indefinite', 'no-hold'] did not match expected value ['day-time', 'evening', 'indefinite', 'night', 'no-hold', 'second-shift', 'third-shift', 'weekend']
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: `job-hold-until-time-supported` attribute value False did not match expected value True
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: `job-k-octets-supported` attribute value <RangeOfIntegers(0, 262144)> did not match expected value <RangeOfIntegers(0, 524288)>
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests I: Assertion failure: `printer-darkness-configured` attribute value 73 did not match expected value 33
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test ended due to assertion exception.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : failed
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Result message : Failed 6 assertions.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: get_attributes_that_need_functional_tests
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 197
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: get_config_change_time_attributes
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 111
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Collected: b'1740424344'
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: getvar b'rtc.unix_timestamp' = b'1740424344'
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 123
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Collected: b'00 days 00 hours 01 mins 25 secs'
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: getvar b'device.uptime' = b'00 days 00 hours 01 mins 25 secs'
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: get_current_date_time_attributes
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: Collected: b'1740424344'
+Feb 24 19:12:27+0000 atf.unity.SocketConnection D: getvar b'rtc.unix_timestamp' = b'1740424344'
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 158
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: get_encoded_zuid_attributes
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 199
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Running test: get_uptime_attributes
+Feb 24 19:12:27+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:27+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:27+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 134
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 134
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'00 days 00 hours 01 mins 27 secs'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'device.uptime' = b'00 days 00 hours 01 mins 27 secs'
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: ipp_versions_supported
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 114
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: operations_supported
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 321
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: printer_device_id
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'Zebra Technologies'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'device.oem.manufacturer_name' = b'Zebra Technologies'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'ZTC ZT231-203dpi ZPL'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'device.oem.model_name' = b'ZTC ZT231-203dpi ZPL'
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 168
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: printer_firmware_versions
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'V97.21.38ZP76213_MFG-UNSECURED'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'appl.name' = b'V97.21.38ZP76213_MFG-UNSECURED'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'V97.21.38ZP76213_MFG-UNSECURED'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'appl.name' = b'V97.21.38ZP76213_MFG-UNSECURED'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'76213'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'appl.svn_id' = b'76213'
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 115
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 142
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 113
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: printer_make_and_model
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'Zebra Technologies'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'device.oem.manufacturer_name' = b'Zebra Technologies'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'ZTC ZT231-203dpi ZPL'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'device.oem.model_name' = b'ZTC ZT231-203dpi ZPL'
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 142
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: resolution
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Collected: b'203'
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: getvar b'head.resolution.in_dpi' = b'203'
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 118
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 130
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 116
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: supported_languages
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 146
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.attributes.IppAttributeTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Writing out suite report for IppAttributeTests
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:12:29+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:12:29+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Suite IPv4IppUriAttributeTests: error
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Passed         : 7
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Error          : 1
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: 
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Suite IPv6IppsUriAttributeTests: skipped
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Passed         : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Skipped        : 8
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: 
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Suite IppAttributeTests: failed
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Passed         : 14
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Failed         : 3
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: 
+Feb 24 19:12:29+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:12:29+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:12:29+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Execute module: network.protocol.ipp.enable
+Feb 24 19:12:29+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:12:29+0000 atf.filemanager.FileManager D: Source directory /workspace/atf/tests/network/protocol/ipp/enable_files DOES NOT exist.
+Feb 24 19:12:29+0000 atf.filemanager.FileManager D: Creating destination directory /workspace/output/scratch.
+Feb 24 19:12:29+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Entering suite: IppEnableDisableTests
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Execute suite: IppEnableDisableTests
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:12:29+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:12:29+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.enable.IppEnableDisableTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.enable.IppEnableDisableTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:12:29+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppEnableDisableTests_BasicTests
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Running test: enable_disable
+Feb 24 19:12:29+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:12:29+0000 atf.network.protocol.ipp.enable.IppEnableDisableTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.enable' = b'off'
+Feb 24 19:12:29+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:12:29+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:12:29+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:12:30+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:12:30+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:12:40+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:12:47+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:12:47+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:13:02+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.enable' = b'on'
+Feb 24 19:13:02+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:02+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:02+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:13:03+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:13:03+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:13:13+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:13:16+0000 atf.unity.SocketConnection D: Error connecting on attempt #1: [Errno 111] Connection refused
+Feb 24 19:13:16+0000 atf.unity.SocketConnection D: Backing off for 1.000 seconds.
+Feb 24 19:13:17+0000 atf.unity.SocketConnection D: Attempt #2 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:13:17+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:13:17+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:13:19+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:13:19+0000 atf.network.protocol.ipp.enable.IppEnableDisableTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:13:19+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:19+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:13:19+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:13:19+0000 atf.tools.ipp.IppFixture I: Disabling IPP and resetting network
+Feb 24 19:13:19+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:19+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.enable' = b'off'
+Feb 24 19:13:19+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:19+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:19+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:13:20+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:13:20+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:13:30+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:13:37+0000 atf.network.protocol.ipp.enable.IppEnableDisableTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Writing out suite report for IppEnableDisableTests
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:13:37+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:13:37+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Suite IppEnableDisableTests: passed
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D:     Passed         : 1
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: 
+Feb 24 19:13:37+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:13:37+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:13:37+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Execute module: network.protocol.ipp.icons
+Feb 24 19:13:37+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:13:37+0000 atf.filemanager.FileManager D: Source directory /workspace/atf/tests/network/protocol/ipp/icons_files DOES NOT exist.
+Feb 24 19:13:37+0000 atf.filemanager.FileManager D: Creating destination directory /workspace/output/scratch.
+Feb 24 19:13:37+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Entering suite: IppIconsTests
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Execute suite: IppIconsTests
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:37+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:13:37+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:13:37+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:13:37+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Setting up fixture (<class 'atf.tools.sgd.SgdFixture'>)...
+Feb 24 19:13:37+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Fixture (<class 'atf.tools.sgd.SgdFixture'>) setup success!
+Feb 24 19:13:37+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:13:37+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:13:37+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: Collected: b'off'
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'off'
+Feb 24 19:13:37+0000 atf.tools.ipp.IppFixture I: Enabling IPP
+Feb 24 19:13:37+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.enable' = b'on'
+Feb 24 19:13:37+0000 atf.tools.ipp.IppFixture I: Resetting network to apply IPP changes
+Feb 24 19:13:37+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:37+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:37+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:13:38+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:13:38+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:13:48+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:13:55+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:13:55+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:13:55+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:13:55+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:13:55+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppIconsTests_BasicTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Running test: printer_icons_ipv4
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:13:55+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:13:55+0000 urllib3.connectionpool D: http://10.14.207.47:631 "POST / HTTP/1.1" 200 209
+Feb 24 19:13:55+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:13:55+0000 urllib3.connectionpool D: http://10.14.207.47:631 "GET /icon-sm.png HTTP/1.1" 200 None
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Attaching data with filename 'icon-sm.png' to test element 'printer_icons_ipv4'.
+Feb 24 19:13:55+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:13:55+0000 urllib3.connectionpool D: http://10.14.207.47:631 "GET /icon-md.png HTTP/1.1" 200 None
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Attaching data with filename 'icon-md.png' to test element 'printer_icons_ipv4'.
+Feb 24 19:13:55+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:13:55+0000 urllib3.connectionpool D: http://10.14.207.47:631 "GET /icon-lg.png HTTP/1.1" 200 None
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Attaching data with filename 'icon-lg.png' to test element 'printer_icons_ipv4'.
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Calling teardown_common for fixture of type SgdFixture.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Tearing down fixture of type SgdFixture.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.icons.IppIconsTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Writing out suite report for IppIconsTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:13:55+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:13:55+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Suite IppIconsTests: passed
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Passed         : 1
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: 
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Execute module: network.protocol.ipp.request_format
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Source directory /workspace/atf/tests/network/protocol/ipp/request_format_files DOES NOT exist.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Creating destination directory /workspace/output/scratch.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Entering suite: IppRequestFormatTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Execute suite: IppRequestFormatTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:13:55+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppRequestFormatTests_BasicTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Running test: result_bad_request
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:13:55+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:13:55+0000 urllib3.connectionpool D: http://10.14.207.47:631 "POST / HTTP/1.1" 200 122
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Running test: result_not_supported
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:13:55+0000 urllib3.connectionpool D: http://10.14.207.47:631 "POST / HTTP/1.1" 200 118
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Running test: result_success
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:13:55+0000 urllib3.connectionpool D: http://10.14.207.47:631 "POST / HTTP/1.1" 200 114
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.request_format.IppRequestFormatTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Writing out suite report for IppRequestFormatTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:13:55+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:13:55+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Suite IppRequestFormatTests: passed
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Passed         : 3
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: 
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Execute module: network.protocol.ipp.tls
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Source directory /workspace/atf/tests/network/protocol/ipp/tls_files DOES NOT exist.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Creating destination directory /workspace/output/scratch.
+Feb 24 19:13:55+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Entering suite: IppTlsTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Execute suite: IppTlsTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.tls.IppTlsTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.tls.IppTlsTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:13:55+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppTlsTests_BasicTests
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Running test: ipp_and_ipps
+Feb 24 19:13:55+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:13:55+0000 atf.network.protocol.ipp.tls.IppTlsTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipp/ipps'
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:55+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:13:55+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:13:57+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:13:57+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:14:07+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:14:14+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:14:14+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:14:14+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:14:14+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:14:14+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:14:14+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:14:14+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:14:14+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:14:14+0000 urllib3.connectionpool D: http://10.14.207.47:631 "POST / HTTP/1.1" 200 142
+Feb 24 19:14:14+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:14:14+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 142
+Feb 24 19:14:14+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:14:14+0000 atf.network.protocol.ipp.tls.IppTlsTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:14:14+0000 atf.CommandLineExecutor D: Running test: ipps_only
+Feb 24 19:14:14+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:14:14+0000 atf.network.protocol.ipp.tls.IppTlsTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:14:14+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:14+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipps'
+Feb 24 19:14:14+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:14+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:14+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:14:15+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:14:15+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:14:25+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:14:33+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:14:33+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:14:33+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:14:33+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:14:33+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:14:33+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:14:33+0000 urllib3.connectionpool D: http://10.14.207.47:631 "POST / HTTP/1.1" 426 23
+Feb 24 19:14:33+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:14:33+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 142
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:14:33+0000 atf.network.protocol.ipp.tls.IppTlsTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:14:33+0000 atf.network.protocol.ipp.tls.IppTlsTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Writing out suite report for IppTlsTests
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:14:33+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:14:33+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Suite IppTlsTests: passed
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D:     Passed         : 2
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: 
+Feb 24 19:14:33+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:14:33+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:14:33+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Execute module: www.ipp.config
+Feb 24 19:14:33+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:14:33+0000 atf.filemanager.FileManager D: Source directory /workspace/atf/tests/www/ipp/config_files DOES NOT exist.
+Feb 24 19:14:33+0000 atf.filemanager.FileManager D: Creating destination directory /workspace/output/scratch.
+Feb 24 19:14:33+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Entering suite: IppConfigPageTests
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Execute suite: IppConfigPageTests
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:14:33+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:14:33+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:14:33+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:14:33+0000 atf.www.ipp.config.IppConfigPageTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:14:33+0000 atf.www.ipp.config.IppConfigPageTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.web_password' = b'FooBar00'
+Feb 24 19:14:33+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:14:33+0000 atf.tools.ipp.IppFixture I: Changing IPP mode
+Feb 24 19:14:33+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipps'
+Feb 24 19:14:33+0000 atf.tools.ipp.IppFixture I: Resetting network to apply IPP changes
+Feb 24 19:14:33+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:33+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:33+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:14:34+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:14:34+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:14:44+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:14:52+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:14:52+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:14:52+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:14:52+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:14:52+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:14:52+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:14:52+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:14:52+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppConfigPageTests_BasicTests
+Feb 24 19:14:52+0000 atf.CommandLineExecutor D: Running test: latitude_longitude
+Feb 24 19:14:52+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:14:52+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:14:52+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:14:52+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:14:52+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:14:53+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:14:53+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:14:53+0000 atf.www.ipp.config.IppConfigPageTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:14:53+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:14:53+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:14:53+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:14:53+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:14:53+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:14:53+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:14:53+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:53+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:14:53+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:14:54+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:14:54+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:15:04+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:15:11+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:15:11+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:15:11+0000 atf.unity.SocketConnection D: Collected: b'-4.807000'
+Feb 24 19:15:11+0000 atf.unity.SocketConnection D: getvar b'device.position.latitude' = b'-4.807000'
+Feb 24 19:15:11+0000 atf.unity.SocketConnection D: Collected: b'0.481000'
+Feb 24 19:15:11+0000 atf.unity.SocketConnection D: getvar b'device.position.longitude' = b'0.481000'
+Feb 24 19:15:11+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:15:11+0000 atf.www.ipp.config.IppConfigPageTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:15:11+0000 atf.CommandLineExecutor D: Running test: location
+Feb 24 19:15:11+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:15:11+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:12+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:15:12+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:12+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:12+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:15:12+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:12+0000 atf.www.ipp.config.IppConfigPageTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:15:12+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:12+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:15:12+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:12+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:13+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:15:13+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:13+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:15:13+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST / HTTP/1.1" 200 129
+Feb 24 19:15:13+0000 atf.unity.SocketConnection D: Collected: b'hOkITeCFxIrOHtxYEYosYHvhbITrjavx'
+Feb 24 19:15:13+0000 atf.unity.SocketConnection D: getvar b'device.location' = b'hOkITeCFxIrOHtxYEYosYHvhbITrjavx'
+Feb 24 19:15:13+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:15:13+0000 atf.www.ipp.config.IppConfigPageTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:15:13+0000 atf.CommandLineExecutor D: Running test: name
+Feb 24 19:15:13+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:15:13+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:13+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:15:13+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:13+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:13+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:15:13+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:13+0000 atf.www.ipp.config.IppConfigPageTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:15:13+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:14+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:15:14+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:14+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:16+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:15:16+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:15:16+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:16+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:16+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:15:17+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:15:17+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:15:27+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:15:30+0000 atf.unity.SocketConnection D: Error connecting on attempt #1: [Errno 111] Connection refused
+Feb 24 19:15:30+0000 atf.unity.SocketConnection D: Backing off for 1.000 seconds.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: Attempt #2 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:15:31+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:31+0000 atf.CommandLineExecutor E: Unhandled <class 'requests.exceptions.ConnectionError'>: HTTPSConnectionPool(host='10.14.207.47', port=631): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3e72ee55d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f3e72ee55d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/env/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='10.14.207.47', port=631): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3e72ee55d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/atf/atf/executor.py", line 1015, in case_execute
+    suite.run_case(test_case)
+  File "/workspace/atf/atf/testtypes/suite.py", line 278, in run_case
+    test_case.run(self)
+  File "/workspace/atf/atf/testtypes/case.py", line 395, in run
+    func(suite)
+  File "/workspace/atf/tests/www/ipp/config.py", line 134, in test_name
+    self.ipp_fixture.assert_attribute('printer-name', name)
+  File "/workspace/atf/atf/tools/ipp.py", line 191, in assert_attribute
+    actual = ipp.get_printer_attribute(attr)
+  File "/workspace/env/lib/python3.10/site-packages/ippia/client.py", line 347, in get_printer_attribute
+    resp_attrs = self.get_printer_attributes(attr)
+  File "/workspace/env/lib/python3.10/site-packages/ippia/client.py", line 313, in get_printer_attributes
+    resp = self.ipp_request(req)
+  File "/workspace/env/lib/python3.10/site-packages/ippia/client.py", line 138, in ipp_request
+    http_resp = self._session.post(self._http_url, data=data, headers={'Content-Type': 'application/ipp'})
+  File "/workspace/env/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/workspace/env/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/workspace/env/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/workspace/env/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='10.14.207.47', port=631): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3e72ee55d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Test outcome   : error
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Result message : Unhandled <class 'requests.exceptions.ConnectionError'>: HTTPSConnectionPool(host='10.14.207.47', port=631): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3e72ee55d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Feb 24 19:15:31+0000 atf.www.ipp.config.IppConfigPageTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Running test: organization
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:15:31+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:15:31+0000 atf.CommandLineExecutor E: setup_common: unhandled <class 'requests.exceptions.ConnectionError'>: HTTPSConnectionPool(host='10.14.207.47', port=631): Max retries exceeded with url: /config (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3e72edc1c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f3e72edc1c0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/env/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/workspace/env/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='10.14.207.47', port=631): Max retries exceeded with url: /config (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3e72edc1c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/atf/atf/executor.py", line 971, in case_setup
+    suite.run_setup_common(test_case)
+  File "/workspace/atf/atf/testtypes/suite.py", line 249, in run_setup_common
+    self.setup_common()
+  File "/workspace/atf/tests/www/ipp/config.py", line 42, in setup_common
+    self._authenticate()
+  File "/workspace/atf/tests/www/ipp/config.py", line 49, in _authenticate
+    self._post_config(password=self.ipp_password)
+  File "/workspace/atf/tests/www/ipp/config.py", line 56, in _post_config
+    form_resp = self.session.get(self.url, verify=False, timeout=10)
+  File "/workspace/env/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/workspace/env/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/workspace/env/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/workspace/env/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='10.14.207.47', port=631): Max retries exceeded with url: /config (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3e72edc1c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Feb 24 19:15:31+0000 atf.www.ipp.config.IppConfigPageTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Writing out suite report for IppConfigPageTests
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:15:31+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:15:31+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Suite IppConfigPageTests: error
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D:     Passed         : 2
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D:     Error          : 3
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: 
+Feb 24 19:15:31+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:15:31+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:15:31+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Execute module: www.ipp.password
+Feb 24 19:15:31+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:15:31+0000 atf.filemanager.FileManager D: Source directory /workspace/atf/tests/www/ipp/password_files DOES NOT exist.
+Feb 24 19:15:31+0000 atf.filemanager.FileManager D: Creating destination directory /workspace/output/scratch.
+Feb 24 19:15:31+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Entering suite: IppPasswordSGDTests
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Execute suite: IppPasswordSGDTests
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:15:31+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:15:31+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:15:31+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:15:31+0000 atf.www.ipp.password.IppPasswordSGDTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:15:31+0000 atf.www.ipp.password.IppPasswordSGDTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:15:31+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:15:31+0000 atf.tools.ipp.IppFixture I: Changing IPP mode
+Feb 24 19:15:31+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipps'
+Feb 24 19:15:31+0000 atf.tools.ipp.IppFixture I: Resetting network to apply IPP changes
+Feb 24 19:15:31+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:31+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:31+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:15:32+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:15:32+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:15:42+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:15:45+0000 atf.unity.SocketConnection D: Error connecting on attempt #1: [Errno 111] Connection refused
+Feb 24 19:15:45+0000 atf.unity.SocketConnection D: Backing off for 1.000 seconds.
+Feb 24 19:15:46+0000 atf.unity.SocketConnection D: Attempt #2 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:15:46+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:15:46+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:15:46+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:15:46+0000 SocketConnection D: Error connecting on attempt #1: [Errno 111] Connection refused
+Feb 24 19:15:46+0000 SocketConnection D: Backing off for 1.000 seconds.
+Feb 24 19:15:47+0000 SocketConnection D: Attempt #2 to connect to tcp_10.14.207.47:631.
+Feb 24 19:15:47+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:15:47+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:15:47+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:15:47+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:15:47+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppPasswordSGDTests_BasicTests
+Feb 24 19:15:47+0000 atf.CommandLineExecutor D: Running test: invalid_password_no_digits
+Feb 24 19:15:47+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:15:47+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:15:47+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.web_password' = b'FooBarll'
+Feb 24 19:15:47+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:47+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:15:47+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:15:48+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:15:48+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:15:58+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:16:05+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:16:05+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:16:05+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:16:06+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:16:06+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:16:06+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:16:06+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:16:06+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:16:06+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:16:06+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:16:06+0000 atf.CommandLineExecutor D: Running test: invalid_password_no_lowercase
+Feb 24 19:16:06+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:16:06+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:16:06+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.web_password' = b'FOOBAR00'
+Feb 24 19:16:06+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:16:06+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:16:06+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:16:07+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:16:07+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:16:17+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:16:24+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:16:24+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:16:24+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:16:25+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:16:25+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:16:25+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:16:25+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:16:25+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:16:25+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:16:25+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:16:25+0000 atf.CommandLineExecutor D: Running test: invalid_password_no_uppercase
+Feb 24 19:16:25+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:16:25+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:16:25+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.web_password' = b'foobar00'
+Feb 24 19:16:25+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:16:25+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:16:25+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:16:26+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:16:26+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:16:36+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:16:43+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:16:43+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:16:43+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:16:44+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:16:44+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:16:44+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:16:44+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:16:44+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:16:44+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:16:44+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:16:44+0000 atf.CommandLineExecutor D: Running test: invalid_password_too_short
+Feb 24 19:16:44+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:16:44+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:16:44+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.web_password' = b'FooBar0'
+Feb 24 19:16:44+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:16:44+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:16:44+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:16:45+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:16:45+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:16:55+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:17:02+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:17:02+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:17:02+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:17:03+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:17:03+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:17:03+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:17:03+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:17:03+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:17:03+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:17:03+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:17:03+0000 atf.CommandLineExecutor D: Running test: valid_password
+Feb 24 19:17:03+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:17:03+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:17:03+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.web_password' = b'FooBar4685'
+Feb 24 19:17:03+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:03+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:03+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:17:04+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:17:04+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:17:14+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:17:21+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:17:21+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:17:21+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:17:22+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:17:22+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:17:22+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:17:22+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:17:22+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:17:22+0000 atf.www.ipp.password.IppPasswordSGDTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:17:22+0000 atf.www.ipp.password.IppPasswordSGDTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Writing out suite report for IppPasswordSGDTests
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:17:22+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:17:22+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Entering suite: IppPasswordWebTests
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Execute suite: IppPasswordWebTests
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:17:22+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:17:22+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:17:22+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:17:22+0000 atf.www.ipp.password.IppPasswordWebTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:17:22+0000 atf.www.ipp.password.IppPasswordWebTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:17:22+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:17:22+0000 atf.tools.ipp.IppFixture I: Changing IPP mode
+Feb 24 19:17:22+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipps'
+Feb 24 19:17:22+0000 atf.tools.ipp.IppFixture I: Resetting network to apply IPP changes
+Feb 24 19:17:22+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:22+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:22+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:17:23+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:17:23+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:17:33+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:17:40+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:17:40+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:17:40+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:17:40+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:17:40+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:17:40+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:17:40+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:17:40+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.web_password' = b'FooBar00'
+Feb 24 19:17:40+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:41+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:17:41+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:17:41+0000 atf.tools.ipp.IppFixture I: Changing IPP mode
+Feb 24 19:17:41+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:41+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipps'
+Feb 24 19:17:41+0000 atf.tools.ipp.IppFixture I: Resetting network to apply IPP changes
+Feb 24 19:17:41+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:41+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:17:41+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:17:42+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:17:42+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:17:52+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:17:59+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:17:59+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:17:59+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:17:59+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:17:59+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:17:59+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:17:59+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:17:59+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppPasswordWebTests_BasicTests
+Feb 24 19:17:59+0000 atf.CommandLineExecutor D: Running test: invalid_password_no_digits
+Feb 24 19:17:59+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:17:59+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:17:59+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:17:59+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:17:59+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:17:59+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:00+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:00+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:00+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:00+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /security HTTP/1.1" 200 None
+Feb 24 19:18:00+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:00+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:00+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /security HTTP/1.1" 200 None
+Feb 24 19:18:00+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:00+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:01+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:01+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:01+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:01+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:01+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:01+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:01+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:01+0000 atf.CommandLineExecutor D: Running test: invalid_password_no_lowercase
+Feb 24 19:18:01+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:01+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:01+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:01+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:01+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:01+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:02+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:02+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:02+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:02+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /security HTTP/1.1" 200 None
+Feb 24 19:18:02+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:02+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:02+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /security HTTP/1.1" 200 None
+Feb 24 19:18:02+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:02+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:02+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:02+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:02+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:03+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:03+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:03+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:03+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:03+0000 atf.CommandLineExecutor D: Running test: invalid_password_no_uppercase
+Feb 24 19:18:03+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:03+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:03+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:03+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:03+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:03+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:03+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:03+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:03+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:04+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /security HTTP/1.1" 200 None
+Feb 24 19:18:04+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:04+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:04+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /security HTTP/1.1" 200 None
+Feb 24 19:18:04+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:04+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:04+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:04+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:04+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:05+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:05+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:05+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:05+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:05+0000 atf.CommandLineExecutor D: Running test: invalid_password_too_short
+Feb 24 19:18:05+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:05+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:05+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:05+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:05+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:05+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:05+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:05+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:05+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:06+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /security HTTP/1.1" 200 None
+Feb 24 19:18:06+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:06+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:06+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /security HTTP/1.1" 200 None
+Feb 24 19:18:06+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:06+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:06+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:06+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:06+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:07+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:07+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:07+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:07+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:07+0000 atf.CommandLineExecutor D: Running test: valid_password
+Feb 24 19:18:07+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:07+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:07+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:07+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:07+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:07+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:07+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:07+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:07+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:07+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /security HTTP/1.1" 200 None
+Feb 24 19:18:07+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:07+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:08+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /security HTTP/1.1" 200 None
+Feb 24 19:18:08+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:08+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:08+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:08+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:08+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:09+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:09+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:09+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:09+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:09+0000 atf.CommandLineExecutor D: Running test: valid_password_no_match
+Feb 24 19:18:09+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:09+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:09+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:09+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:09+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:09+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:09+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:09+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:09+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:09+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /security HTTP/1.1" 200 None
+Feb 24 19:18:09+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:09+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:10+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /security HTTP/1.1" 200 None
+Feb 24 19:18:10+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:10+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:10+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:10+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:10+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:10+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:10+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:10+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:10+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:10+0000 atf.CommandLineExecutor D: Running test: valid_password_wrong_old_password
+Feb 24 19:18:10+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:10+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:10+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:11+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:11+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:11+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:11+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:11+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:11+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:11+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /security HTTP/1.1" 200 None
+Feb 24 19:18:11+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:11+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:12+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /security HTTP/1.1" 200 None
+Feb 24 19:18:12+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:12+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:12+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET /config HTTP/1.1" 200 None
+Feb 24 19:18:12+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:12+0000 urllib3.connectionpool D: Resetting dropped connection: 10.14.207.47
+Feb 24 19:18:12+0000 urllib3.connectionpool D: https://10.14.207.47:631 "POST /config HTTP/1.1" 200 None
+Feb 24 19:18:12+0000 charset_normalizer D: Encoding detection: ascii is most likely the one.
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:12+0000 atf.www.ipp.password.IppPasswordWebTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:12+0000 atf.www.ipp.password.IppPasswordWebTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Writing out suite report for IppPasswordWebTests
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:18:12+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:18:12+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Suite IppPasswordSGDTests: passed
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Passed         : 5
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: 
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Suite IppPasswordWebTests: passed
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Passed         : 7
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: 
+Feb 24 19:18:12+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:18:12+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:18:12+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Execute module: www.ipp.tls
+Feb 24 19:18:12+0000 atf.filemanager.FileManager D: Entering working directory.
+Feb 24 19:18:12+0000 atf.filemanager.FileManager D: Source directory /workspace/atf/tests/www/ipp/tls_files DOES NOT exist.
+Feb 24 19:18:12+0000 atf.filemanager.FileManager D: Creating destination directory /workspace/output/scratch.
+Feb 24 19:18:12+0000 atf.filemanager.FileManager D: Chdir to '/workspace/output/scratch'
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Entering suite: IppWwwTlsTests
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Execute suite: IppWwwTlsTests
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Validating suite...
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Calling suite setup...
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:18:12+0000 atf.lazy.LazyConnection I: Connected to interface 'network' successfully.
+Feb 24 19:18:12+0000 atf.lazy.LazyConnection D: Connection name 'tcp_10.14.207.47:9100'
+Feb 24 19:18:12+0000 atf.www.ipp.tls.IppWwwTlsTests D: Setting up fixture (<class 'atf.tools.ipp.IppFixture'>)...
+Feb 24 19:18:12+0000 atf.www.ipp.tls.IppWwwTlsTests D: Fixture (<class 'atf.tools.ipp.IppFixture'>) setup success!
+Feb 24 19:18:12+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: Collected: b'on'
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: getvar b'ip.ipp.enable' = b'on'
+Feb 24 19:18:12+0000 atf.librarian.TestLibraryManager D: Yielding cases for: IppWwwTlsTests_BasicTests
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Running test: http_and_https
+Feb 24 19:18:12+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:12+0000 atf.www.ipp.tls.IppWwwTlsTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:12+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipp/ipps'
+Feb 24 19:18:12+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:18:12+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:18:12+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:18:13+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:18:13+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:18:23+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:18:31+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:18:31+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:18:31+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:18:31+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:18:31+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:18:31+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:18:31+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:18:31+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:18:31+0000 urllib3.connectionpool D: http://10.14.207.47:631 "GET / HTTP/1.1" 200 None
+Feb 24 19:18:31+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:18:31+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET / HTTP/1.1" 200 None
+Feb 24 19:18:31+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:31+0000 atf.www.ipp.tls.IppWwwTlsTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:31+0000 atf.CommandLineExecutor D: Running test: https_only
+Feb 24 19:18:31+0000 atf.CommandLineExecutor D: Validation completed.
+Feb 24 19:18:31+0000 atf.www.ipp.tls.IppWwwTlsTests D: Calling setup_common for fixture of type <class 'atf.tools.ipp.IppFixture'>.
+Feb 24 19:18:31+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:18:31+0000 atf.unity.SocketConnection D: setvar b'ip.ipp.mode' = b'ipps'
+Feb 24 19:18:31+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:18:31+0000 atf.lazy.LazyConnection D: Re-using existing 'network' connection.
+Feb 24 19:18:31+0000 atf.unity.SocketConnection D: Waiting for socket disconnection...
+Feb 24 19:18:32+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:18:32+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:18:42+0000 atf.unity.SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:18:45+0000 atf.unity.SocketConnection D: Error connecting on attempt #1: [Errno 111] Connection refused
+Feb 24 19:18:45+0000 atf.unity.SocketConnection D: Backing off for 1.000 seconds.
+Feb 24 19:18:46+0000 atf.unity.SocketConnection D: Attempt #2 to connect to tcp_10.14.207.47:9100.
+Feb 24 19:18:46+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:18:46+0000 atf.unity.SocketConnection D: Connected to tcp_10.14.207.47:9100.
+Feb 24 19:18:46+0000 SocketConnection D: Attempt #1 to connect to tcp_10.14.207.47:631.
+Feb 24 19:18:46+0000 SocketConnection D: Error connecting on attempt #1: [Errno 111] Connection refused
+Feb 24 19:18:46+0000 SocketConnection D: Backing off for 1.000 seconds.
+Feb 24 19:18:47+0000 SocketConnection D: Attempt #2 to connect to tcp_10.14.207.47:631.
+Feb 24 19:18:47+0000 SocketConnection D: EventBroker: Publishing connection_made
+Feb 24 19:18:47+0000 SocketConnection D: Connected to tcp_10.14.207.47:631.
+Feb 24 19:18:47+0000 SocketConnection D: Disconnected from tcp_10.14.207.47:631.
+Feb 24 19:18:47+0000 SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:18:47+0000 urllib3.connectionpool D: Starting new HTTPS connection (1): 10.14.207.47:631
+Feb 24 19:18:48+0000 urllib3.connectionpool D: https://10.14.207.47:631 "GET / HTTP/1.1" 200 None
+Feb 24 19:18:48+0000 urllib3.connectionpool D: Starting new HTTP connection (1): 10.14.207.47:631
+Feb 24 19:18:48+0000 urllib3.connectionpool D: http://10.14.207.47:631 "GET / HTTP/1.1" 426 23
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: Test outcome   : passed
+Feb 24 19:18:48+0000 atf.www.ipp.tls.IppWwwTlsTests D: Calling teardown_common for fixture of type IppFixture.
+Feb 24 19:18:48+0000 atf.www.ipp.tls.IppWwwTlsTests D: Tearing down fixture of type IppFixture.
+Feb 24 19:18:48+0000 atf.unity.SocketConnection D: Disconnected from tcp_10.14.207.47:9100.
+Feb 24 19:18:48+0000 atf.unity.SocketConnection D: EventBroker: Publishing connection_lost
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: Writing out suite report for IppWwwTlsTests
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: Writing with reporter type JUnitSuiteReporter
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLSuiteReporter
+Feb 24 19:18:48+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:18:48+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: Suite IppWwwTlsTests: passed
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D:     Passed         : 2
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D:     Failed         : 0
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D:     Skipped        : 0
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D:     Error          : 0
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D:     Canceled       : 0
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D:     Expected Fail  : 0
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: 
+Feb 24 19:18:48+0000 atf.filemanager.FileManager D: Leaving working directory.
+Feb 24 19:18:48+0000 atf.filemanager.FileManager D: Chdir back to '/workspace'
+Feb 24 19:18:48+0000 atf.filemanager.FileManager D: Removing scratch folder.
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: Writing out index report.
+Feb 24 19:18:48+0000 atf.CommandLineExecutor D: Writing with reporter type HTMLIndexReporter
+Feb 24 19:18:48+0000 MARKDOWN D: Successfuly imported extension module "markdown.extensions.meta".
+Feb 24 19:18:48+0000 MARKDOWN D: Successfully loaded extension "markdown.extensions.meta.MetaExtension".

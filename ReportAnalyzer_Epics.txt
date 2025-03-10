@@ -1,0 +1,52 @@
+
+Prep work
+  - Understanding ATF logs
+  - Explore existing open source solutions.
+  - Discussion with other teams in Zebra who have done similar tasks.
+  - Draft of solution and design approach
+  - Evaluation of specific AI models that would be used.
+  - Explore solutions for how the model will consider user corrections/feedback
+  - Design how and where the tool will be implemented
+  
+ Outcome
+   - An approach to tackle our solutions
+   - Overall design
+   - How the tool would report clasifications? Present and take feedback and finalize.
+   - Output structure
+   - Technologies that would be used
+   - Any spikes that would be required before we jump into the solution
+
+Initial development
+  -  Prototyping of approach
+  -  Data collection if any
+  
+Outcome
+   - A tiny POC which can demonstrate the solution and give confidence that we are on right track
+   
+   
+Refinement of prototype
+   - Improve up on the prototype
+   - Can address most of the ATF failure classification
+   - Data structure agreed up on in the prep work is visible
+   - Take failed logs from build page and feed into the tool
+ 
+ Outcome
+   - Tool should be able to classify the failures into different buckets
+   - Should be able to cater to almost all ATF failure conditions.
+
+
+Reporting
+   - Implement reporting.
+
+Outcome:
+   - Tool should be able to report the clasifications in a easily understandable format
+   
+   
+Inetgration to ATF and add REST APi'should
+ - Provision to run the utility at the end of ATF executions(possible through a command line argument)
+ - Run as a individual service to which ATF logs can be fed in and the response should be given back to the user, may be a downloadable excel sheet or html.
+ 
+ 
+ Outcome:
+  - Provision to run as part of ATF
+  - Provision to run as an independent service.

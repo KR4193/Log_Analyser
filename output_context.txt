@@ -1,0 +1,9 @@
+```
+{Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Clean cutter warning cleared return 8192, expected 0, test name: clean_cutter_hqes, Failure category: Product issues, Reason for categorisation: The Clean Cutter utility failed to clear the warning state as expected, indicating a potential issue with the product's handling of cutter clean reminder warnings.}
+
+{Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Clean cutter reminder CRC alert mismatch, test name: cleancutter_crc_alert, Failure category: Product issues, Reason for categorisation: The CRC value for the cutter clean reminder warning alert did not match the expected value, indicating potential problems with the product's alert system for cutter maintenance.}
+
+{Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Printer UI did not show 'Cutter Clean Reminder' warnings correctly, test name: cleancutter_ui, Failure category: Product issues, Reason for categorisation: The user interface for cutter clean reminders did not function as expected, which could indicate a defect in the product's UI logic.}
+
+{Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Printer failed to print network configuration label under clean cutter reminder warning state, test name: cleancutter_print, Failure category: Product issues, Reason for categorisation: The printer did not handle printing network configuration labels correctly when in the cutter clean reminder warning state, suggesting a fault in how the product manages tasks under warning conditions.}
+```

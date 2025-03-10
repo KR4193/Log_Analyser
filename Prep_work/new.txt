@@ -1,0 +1,60 @@
+1	client_enabled_wpa2_psk_pmf_optional_ess_positive
+Test PMF States when client state is enabled and ess resource is wpa2_psk_pmf_optional_ess.
+
+Failed in 115.29 seconds
+Failed 2 assertions.
+Test failure: Timed out waiting for disconnect.
+current_essid 'TS-General' does not match configured essid 'TS-General-PMFO'.
+Show Details
+1739337145.1485488_weblink.txt: weblink.logging.entries
+2	client_enabled_wpa2_psk_pmf_required_ess_positive
+Test PMF States when client state is enabled and ess resource is wpa2_psk_pmf_required_ess.
+
+Failed in 115.17 seconds
+Failed 2 assertions.
+Test failure: Timed out waiting for disconnect.
+current_essid 'TS-General' does not match configured essid 'TS-General-PMFR'.
+Show Details
+1739337260.3620017_weblink.txt: weblink.logging.entries
+3	client_enabled_wpa2_psk_pmf_disabled_ess_positive
+Test PMF States when client state is enabled and ess resource is wpa2_psk_pmf_disabled_ess.
+
+Failed in 115.23 seconds
+Test failure: Timed out waiting for disconnect.
+Show Details
+1739337375.560701_weblink.txt: weblink.logging.entries
+4	client_required_wpa2_psk_pmf_optional_ess_positive
+Test PMF States when client state is required and ess resource is wpa2_psk_pmf_optional_ess.
+
+Expected failure in 115.21 seconds
+Known failure(s) encountered: BUG25610. Applicable to: Platform(s): linkos Found in V91.01.01Z, fix not scheduled yet.
+Failed 2 assertions.
+Test failure: Timed out waiting for disconnect.
+current_essid 'TS-General' does not match configured essid 'TS-General-PMFO'.
+Show Details
+1739337490.789131_weblink.txt: weblink.logging.entries
+5	client_required_wpa2_psk_pmf_required_ess_positive
+Test PMF States when client state is required and ess resource is wpa2_psk_pmf_required_ess.
+
+Failed in 115.21 seconds
+Failed 2 assertions.
+Test failure: Timed out waiting for disconnect.
+current_essid 'TS-General' does not match configured essid 'TS-General-PMFR'.
+Show Details
+1739337606.1014936_weblink.txt: weblink.logging.entries
+7	client_disabled_wpa2_psk_pmf_optional_ess_positive
+Test PMF States when client state is disabled and ess resource is wpa2_psk_pmf_optional_ess.
+
+Failed in 115.22 seconds
+Failed 2 assertions.
+Test failure: Timed out waiting for disconnect.
+current_essid 'TS-General' does not match configured essid 'TS-General-PMFO'.
+Show Details
+1739337836.5565188_weblink.txt: weblink.logging.entries
+9	client_disabled_wpa2_psk_pmf_disabled_ess_positive
+Test PMF States when client state is disabled and ess resource is wpa2_psk_pmf_disabled_ess.
+
+Failed in 115.28 seconds
+Test failure: Timed out waiting for disconnect.
+Show Details
+1739338067.0169477_weblink.txt: weblink.logging.entries

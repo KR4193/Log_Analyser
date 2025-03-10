@@ -1,0 +1,18 @@
+LMstudio , Openai/gemenai
+
+analyse logs - categorise into buckets
+
+atf logs- 
+execute module is starting of the module: start
+start runnin test and get the logs 
+run with raw debug more data dumped - more data
+
+
+
+what are the buckets?
+ Product issues, ATF Script Issues & Setup issues
+unknown
+
+script issues suggest improvements - update
+
+correction with feedback 

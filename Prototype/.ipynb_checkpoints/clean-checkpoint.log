@@ -1,0 +1,192 @@
+Chdir to '/var/jenkins/workspace/PRE_DEV_E_R/ATF_LinkOS_Tests_Benz/output/scratch'
+(suite 1) Entering suite 'FipsSGDTests'
+Synopsis: Class for testing FIPS SGDs
+
+Preparing to execute 1 test cases.
+Execute suite: FipsSGDTests
+Validating suite...
+Validate: Dec 30 08:51:29+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: pre_validate: 'Listener' object has no attribute 'pre_validate'
+Validation completed.
+passed
+
+Dec 30 08:51:29+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: post_validate: 'Listener' object has no attribute 'post_validate'
+Calling suite setup...
+Setup: Dec 30 08:51:29+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: pre_setup: 'Listener' object has no attribute 'pre_setup'
+Attempt #1 to connect to trident_usb_vid_0a5f_pid_0168_sn_D5J221002976.
+Attempt #1 to connect to tcp_10.233.196.191:6003.
+EventBroker: Publishing connection_made
+Connected to tcp_10.233.196.191:6003.
+EventBroker: Publishing connection_made
+Connected to trident_usb_vid_0a5f_pid_0168_sn_D5J221002976.
+Connected to interface 'usb' successfully.
+Connection name 'trident_usb_vid_0a5f_pid_0168_sn_D5J221002976'
+Setting up fixture (<class 'atf.tools.sgd.SgdFixture'>)...
+Fixture (<class 'atf.tools.sgd.SgdFixture'>) setup success!
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Re-using existing 'usb' connection.
+Collected: b''
+getvar b'card.idtext1' = b''
+Collected: b'Not Inserted'
+getvar b'card.inserted' = b'Not Inserted'
+Collected: b'off'
+getvar b'bluetooth.enable' = b'off'
+passed
+
+Dec 30 08:51:40+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: post_setup: 'Listener' object has no attribute 'post_setup'
+Yielding cases for: FipsSGDTests_BasicTests
+(case 1/1) device_fips_enabled_sgd_type
+Synopsis: Test SGD device.fips.enabled type is enum
+Validation completed.
+Collected: b'no'
+getvar b'device.fips.enabled' = b'no'
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Assertion failure: SGD: device.fips.enabled expected range is {'no'} got range {'yes', 'no'}
+Test ended due to assertion exception.
+Chdir to '/var/jenkins/workspace/PRE_DEV_E_R/ATF_LinkOS_Tests_Benz/output/scratch'
+(suite 1) Entering suite 'WlanSGDTest'
+Synopsis: Test wlan SGD configurations.
+
+Preparing to execute 4 test cases.
+Execute suite: WlanSGDTest
+Validating suite...
+Validate: Dec 30 08:52:28+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: pre_validate: 'Listener' object has no attribute 'pre_validate'
+Validation completed.
+passed
+
+Dec 30 08:52:29+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: post_validate: 'Listener' object has no attribute 'post_validate'
+Calling suite setup...
+Setup: Dec 30 08:52:29+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: pre_setup: 'Listener' object has no attribute 'pre_setup'
+Attempt #1 to connect to trident_usb_vid_0a5f_pid_0168_sn_D5J221002976.
+Attempt #1 to connect to tcp_10.233.196.191:6003.
+EventBroker: Publishing connection_made
+Connected to tcp_10.233.196.191:6003.
+EventBroker: Publishing connection_made
+Connected to trident_usb_vid_0a5f_pid_0168_sn_D5J221002976.
+Connected to interface 'usb' successfully.
+Connection name 'trident_usb_vid_0a5f_pid_0168_sn_D5J221002976'
+Setting up fixture (<class 'atf.tools.sgd.SgdFixture'>)...
+Fixture (<class 'atf.tools.sgd.SgdFixture'>) setup success!
+Re-using existing 'usb' connection.
+Collected: b'000000000000'
+getvar b'wlan.ip.dhcp.cid_all' = b'000000000000'
+Saving SGD b'wlan.ip.dhcp.cid_all' value b'000000000000'.
+Re-using existing 'usb' connection.
+Collected: b'1'
+getvar b'wlan.ip.dhcp.cid_type' = b'1'
+Saving SGD b'wlan.ip.dhcp.cid_type' value b'1'.
+Re-using existing 'usb' connection.
+Collected: b'00074DD21220'
+getvar b'internal_wired.ip.dhcp.cid_all' = b'00074DD21220'
+Saving SGD b'internal_wired.ip.dhcp.cid_all' value b'00074DD21220'.
+Re-using existing 'usb' connection.
+Collected: b'1'
+getvar b'internal_wired.ip.dhcp.cid_type' = b'1'
+Saving SGD b'internal_wired.ip.dhcp.cid_type' value b'1'.
+passed
+
+Dec 30 08:52:29+0000 atf.CommandLineExecutor W: Exception raised in calling listener method: post_setup: 'Listener' object has no attribute 'post_setup'
+Yielding cases for: WlanSGDTest_BasicTests
+(case 1/4) ip_dhcp_cid_all_range
+Synopsis: Test wlan.ip.dhcp.cid_all and
+internal_wired.ip.dhcp.cid_all range is set to 0-120.
+Validation completed.
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Calling teardown_common for fixture of type SgdFixture.
+Result: passed
+
+(case 2/4) ip_dhcp_cid_all_set_get
+Synopsis: Test wlan.ip.dhcp.cid_all and
+internal_wired.ip.dhcp.cid_all are able to set 60 and
+120 character length value.
+Validation completed.
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+setvar b'wlan.ip.dhcp.cid_type' = b'0'
+setvar b'wlan.ip.dhcp.cid_all' = b'wbQNzGKiUyBxJTbOxCDpGIDbRoJkHBpykmDDmrhzBoZcDlsrvmzStAQATWxr'
+Collected: b'wbQNzGKiUyBxJTbOxCDpGIDbRoJkHBpykmDDmrhzBoZcDlsrvmzStAQATWxr'
+getvar b'wlan.ip.dhcp.cid_all' = b'wbQNzGKiUyBxJTbOxCDpGIDbRoJkHBpykmDDmrhzBoZcDlsrvmzStAQATWxr'
+setvar b'wlan.ip.dhcp.cid_all' = b'ZhPMoRPEAXQfvVnobogRUvNFfvccRYDkTvlybPeHrVgyCtBzCMOkPbCzmZFug'
+Collected: b'ZhPMoRPEAXQfvVnobogRUvNFfvccRYDkTvlybPeHrVgyCtBzCMOkPbCzmZFu'
+getvar b'wlan.ip.dhcp.cid_all' = b'ZhPMoRPEAXQfvVnobogRUvNFfvccRYDkTvlybPeHrVgyCtBzCMOkPbCzmZFu'
+Assertion failure: SGD b'wlan.ip.dhcp.cid_all' value is incorrect Got `b'ZhPMoRPEAXQfvVnobogRUvNFfvccRYDkTvlybPeHrVgyCtBzCMOkPbCzmZFu'` but expected `b'wbQNzGKiUyBxJTbOxCDpGIDbRoJkHBpykmDDmrhzBoZcDlsrvmzStAQATWxr'`
+setvar b'wlan.ip.dhcp.cid_type' = b'2'
+setvar b'wlan.ip.dhcp.cid_all' = b'38942F41cc6EA5CfBe35f5C7C9914Dd2A27F59e275BbCD9fb0e93Aa18Ac37FcfD8A78efaCEeBfF78E4b5efFAeCa4cd70A04df781B88Ba9e3D2cdf15A'
+Collected: b'38942F41cc6EA5CfBe35f5C7C9914Dd2A27F59e275BbCD9fb0e93Aa18Ac37FcfD8A78efaCEeBfF78E4b5efFAeCa4cd70A04df781B88Ba9e3D2cdf15A'
+getvar b'wlan.ip.dhcp.cid_all' = b'38942F41cc6EA5CfBe35f5C7C9914Dd2A27F59e275BbCD9fb0e93Aa18Ac37FcfD8A78efaCEeBfF78E4b5efFAeCa4cd70A04df781B88Ba9e3D2cdf15A'
+setvar b'wlan.ip.dhcp.cid_all' = b'fD6B975b4c27d8ed35D2de2B6DBaD9B43aCF09B5fA4Ece0765fb1dcEdE5eba454dCc6A694298cafE2BB1cfD8Ad5eB7eDDCC545dff358d7bebec39AAF9'
+Collected: b'38942F41cc6EA5CfBe35f5C7C9914Dd2A27F59e275BbCD9fb0e93Aa18Ac37FcfD8A78efaCEeBfF78E4b5efFAeCa4cd70A04df781B88Ba9e3D2cdf15A'
+getvar b'wlan.ip.dhcp.cid_all' = b'38942F41cc6EA5CfBe35f5C7C9914Dd2A27F59e275BbCD9fb0e93Aa18Ac37FcfD8A78efaCEeBfF78E4b5efFAeCa4cd70A04df781B88Ba9e3D2cdf15A'
+setvar b'internal_wired.ip.dhcp.cid_type' = b'0'
+setvar b'internal_wired.ip.dhcp.cid_all' = b'xQMtJSXFojYrFxylJPZPODQqEpLREEujoNRMgTCMeWOIFnndYojLTgZIQfEu'
+Collected: b'xQMtJSXFojYrFxylJPZPODQqEpLREEujoNRMgTCMeWOIFnndYojLTgZIQfEu'
+getvar b'internal_wired.ip.dhcp.cid_all' = b'xQMtJSXFojYrFxylJPZPODQqEpLREEujoNRMgTCMeWOIFnndYojLTgZIQfEu'
+setvar b'internal_wired.ip.dhcp.cid_all' = b'xlZhnAuOslMfzwyIymdXlDrbXGQCnjQiBDUNgVLzWSkvZHkTdrAExIOKqpdMZ'
+Collected: b'xlZhnAuOslMfzwyIymdXlDrbXGQCnjQiBDUNgVLzWSkvZHkTdrAExIOKqpdM'
+getvar b'internal_wired.ip.dhcp.cid_all' = b'xlZhnAuOslMfzwyIymdXlDrbXGQCnjQiBDUNgVLzWSkvZHkTdrAExIOKqpdM'
+Assertion failure: SGD b'internal_wired.ip.dhcp.cid_all' value is incorrect Got `b'xlZhnAuOslMfzwyIymdXlDrbXGQCnjQiBDUNgVLzWSkvZHkTdrAExIOKqpdM'` but expected `b'xQMtJSXFojYrFxylJPZPODQqEpLREEujoNRMgTCMeWOIFnndYojLTgZIQfEu'`
+setvar b'internal_wired.ip.dhcp.cid_type' = b'2'
+setvar b'internal_wired.ip.dhcp.cid_all' = b'3b5cf7F24B2edfb13AcdD66e7CE17F8Fae0efD5bdC72ACbAEec7Fa184c13fF4fE8C7Bc1D550E8599Fc7A893ecEeFd0dFd4F1BB2B15e9A5dB8Ee74ec8'
+Collected: b'3b5cf7F24B2edfb13AcdD66e7CE17F8Fae0efD5bdC72ACbAEec7Fa184c13fF4fE8C7Bc1D550E8599Fc7A893ecEeFd0dFd4F1BB2B15e9A5dB8Ee74ec8'
+getvar b'internal_wired.ip.dhcp.cid_all' = b'3b5cf7F24B2edfb13AcdD66e7CE17F8Fae0efD5bdC72ACbAEec7Fa184c13fF4fE8C7Bc1D550E8599Fc7A893ecEeFd0dFd4F1BB2B15e9A5dB8Ee74ec8'
+setvar b'internal_wired.ip.dhcp.cid_all' = b'D19d5bC8bD97DAea9eA8B11c1Eb6439BaE1EB8C37230C11A3EebB2bFd75F3dce77336647be8646c3FDdcfEd497766Ca9Acbec6fca6f6Bf39d6F7dCE8b'
+Collected: b'3b5cf7F24B2edfb13AcdD66e7CE17F8Fae0efD5bdC72ACbAEec7Fa184c13fF4fE8C7Bc1D550E8599Fc7A893ecEeFd0dFd4F1BB2B15e9A5dB8Ee74ec8'
+getvar b'internal_wired.ip.dhcp.cid_all' = b'3b5cf7F24B2edfb13AcdD66e7CE17F8Fae0efD5bdC72ACbAEec7Fa184c13fF4fE8C7Bc1D550E8599Fc7A893ecEeFd0dFd4F1BB2B15e9A5dB8Ee74ec8'
+Test ended due to assertion exception.

@@ -1,0 +1,182 @@
+[
+    {
+        "test_suite": "ClassicBT",
+        "test_case": "not_discoverable",
+        "test_description": "Attempts to ensure the Bluetooth device is not discoverable.",
+        "classification": "Setup issue",
+        "reasoning": "The log shows multiple attempts to establish a Bluetooth session, all failing due to an inability to discover the RFCOMM channel. This indicates a potential issue with the Bluetooth connectivity or the network environment rather than an issue with the product or the test script itself.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BasicTests",
+        "test_case": "advertising",
+        "test_description": "The test involves checking the Bluetooth advertising functionality.",
+        "classification": "Product issue",
+        "reasoning": "The log entry indicates an 'Unhandled exception: BluetoothTimeoutError: Timed out waiting for response to start discovery mgmt request!' error which suggests that the Bluetooth discovery operation is timing out. This points to a failure in the core functionality of the product related to Bluetooth operations, likely due to an internal error or glitch in how the product handles Bluetooth communication.",
+        "correct": "no",
+        "issue": "Setup issue",
+        "reason": "harish "
+    },
+    {
+        "test_suite": "BasicTests",
+        "test_case": "pairing_mode",
+        "test_description": "The test involves enabling limited pairing mode and performing Bluetooth pairing operations.",
+        "classification": "Setup issue",
+        "reasoning": "From the logs, it is evident that the pairing attempts with the device (48:A4:93:8B:20:7F) result in multiple 404 errors when trying to fetch pending pairings or operations. This indicates that the environment setup (specifically the server at 10.14.207.25) might not have the required Bluetooth pairing information or configuration correctly set up. This is further supported by errors when attempting to connect to specified server channels, pointing towards a setup or network configuration issue rather than a problem with the script or the product itself.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "le_gap_local_name_write",
+        "test_description": "The test case attempts to write a local name to a Bluetooth device and then verifies if it was written correctly.",
+        "classification": "Setup issues",
+        "reasoning": "The log shows that the test encountered a 'BluetoothTimeoutError: Timed out waiting for response to start discovery mgmt request!' error. This indicates that there was a problem with the Bluetooth connectivity. The connection attempts to the specified client repeatedly failed, showing 'No matching connections found for client_id', which clearly points to an issue with the test setup environment, likely related to network or Bluetooth connectivity issues.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p22e",
+        "test_description": "Test to check the local Bluetooth name configuration on ZSB P22E printer.",
+        "classification": "Setup issue",
+        "reasoning": "The logs indicate that there were repeated failures to connect to the specified weblink server (v1.jrpc.zebra.com) with the relevant client ID. This connection issue after the printer's reboot suggests a problem with the test environment setup, such as network or server availability, rather than a flaw in the test script or the product itself. The consistent 'Client not found' and 'No matching connections found' errors further indicate a setup issue related to connectivity or server configuration.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p52u",
+        "test_description": "Test setting and validating Bluetooth local name on ZSB-DP52U printer.",
+        "classification": "Setup issue",
+        "reasoning": "The failure occurs because the client could not connect to the necessary server after multiple attempts. This indicates a problem with the network setup or connectivity specifically between the client and the defined server (weblink_v4). Therefore, it falls under setup issues.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p12e",
+        "test_description": "Testing the local name functionality on ZSB P12E.",
+        "classification": "Setup issues",
+        "reasoning": "The failure appears to be due to an inability to connect to the weblink server repeatedly, which suggests network connectivity issues. The error messages indicate multiple connection attempts failing due to 'no matching connections found'. This suggests a problem with the test environment rather than the product or the test script itself.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p22u",
+        "test_description": "This test case involves verifying the local name functionality on the ZSB-P22U printers.",
+        "classification": "Setup issues",
+        "reasoning": "The log indicates an issue with connecting to the weblink server after the printer reboot. The repeated error of '[Errno 111] No matching connections found for client_id=DCJ211700203933F425DD781061D01233EDED8A99EDDDE' suggests a network or configuration issue specifically related to the client not being recognized or found by the server. This indicates a problem in the test setup or environment rather than the script or product itself.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p12n",
+        "test_description": "Test to set and verify the local name for a Bluetooth device on ZSB P12N.",
+        "classification": "Setup issues",
+        "reasoning": "The log entries show that there was repeated failure to connect to the weblink client (DCJ211700203933F425DD781061D01233EDED8A99EDDDE). Errors like 'No matching connections found' indicate issues related to the test environment setup, such as network connectivity problems. These issues are not related to the test script itself or the product but rather to the environment in which the test was executed.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p22n",
+        "test_description": "Test the local name on ZSB P22N device",
+        "classification": "Setup issues",
+        "reasoning": "The error indicates repeated attempts to connect to a weblink client failed, with errors stating 'No matching connections found for client_id'. This indicates issues with the network or server connection, specifically a setup/environment issue rather than a product or ATF script issue.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p42e",
+        "test_description": "Test to change and verify local Bluetooth name on the ZSB P42E printer.",
+        "classification": "Setup issues",
+        "reasoning": "The logs indicate repeated failures to connect to a client (DCJ211700203933F425DD781061D01233EDED8A99EDDDE) via a specified channel and server. The error '[Errno 111] No matching connections found' suggests a network or connectivity issue rather than an error in the test script or the product itself. The setup configuration could be responsible for this repeated failure to establish a connection.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p32n",
+        "test_description": "Test to verify the local name on ZSB P32N Bluetooth printer.",
+        "classification": "Setup issues",
+        "reasoning": "The log indicates repeated failed attempts to connect to the Bluetooth client via the Weblink interface. The 'Error connecting on attempt' messages and 'No matching connections found for client_id' errors suggest that the issue lies with network connectivity or incorrect configuration in the test environment rather than a problem with the product or test script.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "BluetoothLocalNameTest",
+        "test_case": "local_name_on_zsb_p12u",
+        "test_description": "Attempt to set local Bluetooth name on ZSB-DP52U printer.",
+        "classification": "Setup issues",
+        "reasoning": "The log indicates repeated attempts to connect to the client with the error message 'No matching connections found for client_id=DCJ211700203933F425DD781061D01233EDED8A99EDDDE'. This suggests a connectivity issue, likely related to the test environment setup rather than the script or the product itself.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "ManufacturingModeTests",
+        "test_case": "discoverable_and_pairable",
+        "test_description": "Testing whether the device is discoverable and pairable over Bluetooth.",
+        "classification": "Setup issues",
+        "reasoning": "The log indicates repeated failed attempts to establish a Bluetooth connection and repeated errors such as 'No matching connections found.' This strongly suggests issues within the test environment, specifically with network or Bluetooth connectivity, particularly after a device reboot, not a problem with the test script or the product itself.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "PairingTests",
+        "test_case": "unpairable",
+        "test_description": "The test attempts to unpair the device but fails to establish Bluetooth session.",
+        "classification": "Setup issue",
+        "reasoning": "The log indicates multiple attempts to connect to the Bluetooth device, with errors specifying 'Failed to discover RFCOMM channel.' This points to an issue with the Bluetooth connectivity setup rather than a problem with the test script or the product itself.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "PairingTests",
+        "test_case": "command_pair",
+        "test_description": "The test involves pairing a device using its Bluetooth address and validating the connection process.",
+        "classification": "Setup issues",
+        "reasoning": "The log entries indicate several attempts to start a Bluetooth session and discover RFCOMM channels, all of which failed. The errors consistently mention 'Failed to discover RFCOMM channel,' which suggests an issue with the Bluetooth environment or network setup rather than an inherent flaw in the product or test script. Setup issues such as these are often related to hardware connectivity or environmental configuration.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "PairingTests",
+        "test_case": "command_pairable_duration",
+        "test_description": "This test checks the duration for which the device remains in a pairable state.",
+        "classification": "Product issue",
+        "reasoning": "The logs indicate a BluetoothTimeoutError after attempting several operations involving Bluetooth connection and session checks. The error 'Timed out waiting for response to start discovery mgmt request' suggests that the device or the Bluetooth stack did not respond in the expected timeframe, which points to a malfunction in the product's Bluetooth functionality rather than a setup or script issue.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    },
+    {
+        "test_suite": "PairingTests",
+        "test_case": "unpairable_after_reboot",
+        "test_description": "This test verifies that a device remains unpairable after a reboot to ensure that the unpairing persists.",
+        "classification": "Setup issues",
+        "reasoning": "The log entries show repeated attempts to connect to a specific client_id and server_id over a web link, all of which fail with the same error indicating no matching connections found. This indicates an issue with the test environment setup, as the network or Bluetooth connectivity is not establishing as expected after the reboot, likely due to configuration or environment issues.",
+        "correct": "yes",
+        "issue": "",
+        "reason": ""
+    }
+]

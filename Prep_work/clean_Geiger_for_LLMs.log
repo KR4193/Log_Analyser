@@ -1,0 +1,277 @@
+Entering suite: CleanCutter
+Execute suite: CleanCutter
+Validating suite...
+Validation completed.
+Calling suite setup...
+Attempt #1 to connect to tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_made
+Connected to tcp_10.14.207.146:9100.
+Connected to interface 'network' successfully.
+Connection name 'tcp_10.14.207.146:9100'
+Setting up fixture (<class 'atf.tools.sgd.SgdFixture'>)...
+Fixture (<class 'atf.tools.sgd.SgdFixture'>) setup success!
+Re-using existing 'network' connection.
+Collected: b'continuous'
+getvar b'ezpl.media_type' = b'continuous'
+Saving SGD 'ezpl.media_type' value 'continuous'.
+Re-using existing 'network' connection.
+Collected: b'cutter'
+getvar b'media.printmode' = b'cutter'
+Saving SGD 'media.printmode' value 'cutter'.
+Re-using existing 'network' connection.
+Collected: b'1000'
+getvar b'zpl.label_length' = b'1000'
+Saving SGD 'zpl.label_length' value '1000'.
+Re-using existing 'network' connection.
+Collected: b'0'
+getvar b'odometer.user_total_cuts' = b'0'
+Saving SGD 'odometer.user_total_cuts' value '0'.
+Re-using existing 'network' connection.
+Collected: b'100000'
+getvar b'cutter.clean_reminder_threshold' = b'100000'
+Saving SGD 'cutter.clean_reminder_threshold' value '100000'.
+setvar b'ezpl.media_type' = b'continuous'
+setvar b'zpl.label_length' = b'2000'
+Collected: b'\r\n\r\n  PRINTER STATUS                            \r\n   ERRORS:         0 00000000 00000000      \r\n   WARNINGS:       1 00000000 00002000      \r\n'
+setvar b'device.reset' = b''
+Waiting for reset with: <SocketConnection tcp_10.14.207.146:9100>
+Waiting for socket disconnection...
+Disconnected from tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_lost
+Attempt #1 to connect to tcp_10.14.207.146:9100.
+Error connecting on attempt #1: timed out
+Backing off for 1.000 seconds.
+Attempt #2 to connect to tcp_10.14.207.146:9100.
+Error connecting on attempt #2: timed out
+Backing off for 1.000 seconds.
+Attempt #3 to connect to tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_made
+Connected to tcp_10.14.207.146:9100.
+Setting up fixture (<class 'atf.tools.display.DisplayFixture'>)...
+Fixture (<class 'atf.tools.display.DisplayFixture'>) setup success!
+setvar b'media.printmode' = b'cutter'
+Collected: b'300'
+getvar b'head.resolution.in_dpi' = b'300'
+Yielding cases for: CleanCutter_BasicTests
+Running test: clean_cutter_hqes
+Validation completed.
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Calling setup_common for fixture of type <class 'atf.tools.display.DisplayFixture'>.
+setvar b'diag.simulate_event' = b'CutterCleanReminder:Set'
+Collected: b'\r\n\r\n  PRINTER STATUS                            \r\n   ERRORS:         0 00000000 00000000      \r\n   WARNINGS:       1 00000000 00022000      \r\n'
+setvar b'diag.simulate_event' = b'CutterCleanReminder:Clear'
+Collected: b'\r\n\r\n  PRINTER STATUS                            \r\n   ERRORS:         0 00000000 00000000      \r\n   WARNINGS:       1 00000000 00002000      \r\n'
+Assertion failure: Clean cutter warning cleared return 8192, expected 0.
+Test ended due to assertion exception.
+Test outcome   : failed
+Result message : Clean cutter warning cleared return 8192, expected 0.
+Calling teardown_common for fixture of type SgdFixture.
+Calling teardown_common for fixture of type DisplayFixture.
+Running test: cleancutter_crc_alert
+Normal validation failure encountered via assertion exception.
+Running test: cleancutter_print
+Normal validation failure encountered via assertion exception.
+Running test: cleancutter_ui
+Normal validation failure encountered via assertion exception.
+Tearing down fixture of type SgdFixture.
+Restoring 5 saved SGDs.
+Re-using existing 'network' connection.
+setvar b'ezpl.media_type' = b'continuous'
+Re-using existing 'network' connection.
+setvar b'media.printmode' = b'cutter'
+Re-using existing 'network' connection.
+setvar b'zpl.label_length' = b'1000'
+Re-using existing 'network' connection.
+setvar b'odometer.user_total_cuts' = b'0'
+Re-using existing 'network' connection.
+setvar b'cutter.clean_reminder_threshold' = b'100000'
+Tearing down fixture of type DisplayFixture.
+Disconnected from tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_lost
+Writing out suite report for CleanCutter
+Writing with reporter type JUnitSuiteReporter
+Writing with reporter type HTMLSuiteReporter
+Successfuly imported extension module "markdown.extensions.meta".
+Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Entering suite: SnmpCleanCutterTests
+Execute suite: SnmpCleanCutterTests
+Validating suite...
+Validation completed.
+Calling suite setup...
+Attempt #1 to connect to tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_made
+Connected to tcp_10.14.207.146:9100.
+Connected to interface 'network' successfully.
+Connection name 'tcp_10.14.207.146:9100'
+Setting up fixture (<class 'atf.tools.sgd.SgdFixture'>)...
+Fixture (<class 'atf.tools.sgd.SgdFixture'>) setup success!
+Re-using existing 'network' connection.
+Collected: b'100000'
+getvar b'cutter.clean_reminder_threshold' = b'100000'
+Saving SGD 'cutter.clean_reminder_threshold' value '100000'.
+Yielding cases for: SnmpCleanCutterTests_BasicTests
+Running test: clean_reminder_enable_snmp
+Validation completed.
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Collected: b'disabled'
+getvar b'cutter.clean_reminder_enable' = b'disabled'
+Collected: b'enabled'
+getvar b'cutter.clean_reminder_enable' = b'enabled'
+Test outcome   : passed
+Calling teardown_common for fixture of type SgdFixture.
+Running test: clean_reminder_threshold_snmp
+Validation completed.
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Collected: b'100000'
+getvar b'cutter.clean_reminder_threshold' = b'100000'
+setvar b'cutter.clean_reminder_threshold' = b'100001'
+Collected: b'100001'
+getvar b'cutter.clean_reminder_threshold' = b'100001'
+Test outcome   : passed
+Calling teardown_common for fixture of type SgdFixture.
+setvar b'device.restore_defaults' = b'cutter.clean_reminder_enable'
+Tearing down fixture of type SgdFixture.
+Restoring 1 saved SGDs.
+Re-using existing 'network' connection.
+setvar b'cutter.clean_reminder_threshold' = b'100000'
+Disconnected from tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_lost
+Writing out suite report for SnmpCleanCutterTests
+Writing with reporter type JUnitSuiteReporter
+Writing with reporter type HTMLSuiteReporter
+Successfuly imported extension module "markdown.extensions.meta".
+Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Suite CleanCutter: failed
+Passed         : 0
+Failed         : 1
+Skipped        : 3
+Error          : 0
+Canceled       : 0
+Expected Fail  : 0
+
+Suite SnmpCleanCutterTests: passed
+Passed         : 2
+Failed         : 0
+Skipped        : 0
+Error          : 0
+Canceled       : 0
+Expected Fail  : 0
+
+Leaving working directory.
+Chdir back to '/home/swgroup/data/jenkins/workspace/LINK_OS_7_2_ATF_Geiger_Tests_ZT6X0_Cutter'
+Removing scratch folder.
+Execute module: print.cutter
+Entering working directory.
+Source /home/swgroup/data/jenkins/workspace/LINK_OS_7_2_ATF_Geiger_Tests_ZT6X0_Cutter/atf/tests/print/cutter_files exists, copying files
+Chdir to '/home/swgroup/data/jenkins/workspace/LINK_OS_7_2_ATF_Geiger_Tests_ZT6X0_Cutter/output/scratch'
+Entering suite: CutterDetectTests
+Execute suite: CutterDetectTests
+Validating suite...
+Validation completed.
+Calling suite setup...
+Attempt #1 to connect to tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_made
+Connected to tcp_10.14.207.146:9100.
+Connected to interface 'network' successfully.
+Connection name 'tcp_10.14.207.146:9100'
+Setting up fixture (<class 'atf.tools.sgd.SgdFixture'>)...
+Fixture (<class 'atf.tools.sgd.SgdFixture'>) setup success!
+Re-using existing 'network' connection.
+Collected: b'hybrid_xml_zpl'
+getvar b'device.languages' = b'hybrid_xml_zpl'
+Saving SGD b'device.languages' value b'hybrid_xml_zpl'.
+Re-using existing 'network' connection.
+Collected: b'no motion'
+getvar b'ezpl.head_close_action' = b'no motion'
+Saving SGD b'ezpl.head_close_action' value b'no motion'.
+Re-using existing 'network' connection.
+Collected: b'cutter'
+getvar b'ezpl.print_mode' = b'cutter'
+Saving SGD b'ezpl.print_mode' value b'cutter'.
+Re-using existing 'network' connection.
+Collected: b'N'
+getvar b'media.backfeed' = b'N'
+Saving SGD b'media.backfeed' value b'N'.
+Re-using existing 'network' connection.
+Collected: b'no motion'
+getvar b'ezpl.power_up_action' = b'no motion'
+Saving SGD b'ezpl.power_up_action' value b'no motion'.
+Re-using existing 'network' connection.
+Collected: b'continuous'
+getvar b'ezpl.media_type' = b'continuous'
+Saving SGD b'ezpl.media_type' value b'continuous'.
+Re-using existing 'network' connection.
+Collected: b'0'
+getvar b'media.tof' = b'0'
+Saving SGD b'media.tof' value b'0'.
+setvar b'device.languages' = b'epl_zpl'
+setvar b'ezpl.head_close_action' = b'no motion'
+Collected: b'300'
+getvar b'head.resolution.in_dpi' = b'300'
+Yielding cases for: CutterDetectTests_BasicTests
+Running test: detect_cutter_device_current_pcc
+Validation completed.
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Collected: b'ZT61043-T110100Z'
+getvar b'device.current_configuration_number' = b'ZT61043-T110100Z'
+Test outcome   : passed
+Calling teardown_common for fixture of type SgdFixture.
+Running test: detect_cutter_installed
+Validation completed.
+Calling setup_common for fixture of type <class 'atf.tools.sgd.SgdFixture'>.
+Collected: b'yes'
+getvar b'device.cutter_installed' = b'yes'
+Test outcome   : passed
+Calling teardown_common for fixture of type SgdFixture.
+Tearing down fixture of type SgdFixture.
+Restoring 7 saved SGDs.
+Re-using existing 'network' connection.
+setvar b'device.languages' = b'hybrid_xml_zpl'
+Re-using existing 'network' connection.
+setvar b'ezpl.head_close_action' = b'no motion'
+Re-using existing 'network' connection.
+setvar b'ezpl.print_mode' = b'cutter'
+Re-using existing 'network' connection.
+setvar b'media.backfeed' = b'N'
+Re-using existing 'network' connection.
+setvar b'ezpl.power_up_action' = b'no motion'
+Re-using existing 'network' connection.
+setvar b'ezpl.media_type' = b'continuous'
+Re-using existing 'network' connection.
+setvar b'media.tof' = b'0'
+Disconnected from tcp_10.14.207.146:9100.
+EventBroker: Publishing connection_lost
+Writing out suite report for CutterDetectTests
+Writing with reporter type JUnitSuiteReporter
+Writing with reporter type HTMLSuiteReporter
+Successfuly imported extension module "markdown.extensions.meta".
+Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Entering suite: ErrorCutterTests
+Execute suite: ErrorCutterTests
+Validating suite...
+Normal validation failure encountered via assertion exception.
+Yielding cases for: ErrorCutterTests_BasicTests
+Writing out suite report for ErrorCutterTests
+Writing with reporter type JUnitSuiteReporter
+Writing with reporter type HTMLSuiteReporter
+Successfuly imported extension module "markdown.extensions.meta".
+Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+Suite CutterDetectTests: passed
+Passed         : 2
+Failed         : 0
+Skipped        : 0
+Error          : 0
+Canceled       : 0
+Expected Fail  : 0
+
+Suite ErrorCutterTests: skipped
+Passed         : 0
+Failed         : 0
+Skipped        : 2
+Error          : 0
+Canceled       : 0
+Expected Fail  : 0
+
+Leaving working directory.
+Chdir back to '/home/swgroup/data/jenkins/workspace/LINK_OS_7_2_ATF_Geiger_Tests_ZT6X0_Cutter'
+Removing scratch folder.

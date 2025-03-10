@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Suite Failures Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Suite Failures Report</h1>
+    <!-- Placeholder for dynamically generated content -->
+    <div id="report-content"></div>
+
+    <script>
+        const reportContent = document.getElementById('report-content');
+        const data = `
+            {Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Clean cutter warning cleared return 8192, expected 0, test name: clean_cutter_hqes, Failure category: Product issues, Reason for categorisation: The Clean Cutter utility failed to clear the warning state as expected, indicating a potential issue with the product's handling of cutter clean reminder warnings.}
+            {Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Clean cutter reminder CRC alert mismatch, test name: cleancutter_crc_alert, Failure category: Product issues, Reason for categorisation: The CRC value for the cutter clean reminder warning alert did not match the expected value, indicating potential problems with the product's alert system for cutter maintenance.}
+            {Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Printer UI did not show 'Cutter Clean Reminder' warnings correctly, test name: cleancutter_ui, Failure category: Product issues, Reason for categorisation: The user interface for cutter clean reminders did not function as expected, which could indicate a defect in the product's UI logic.}
+            {Suite: CleanCutter, Module: print.cutter, Synopsis of the test Failed: Printer failed to print network configuration label under clean cutter reminder warning state, test name: cleancutter_print, Failure category: Product issues, Reason for categorisation: The printer did not handle printing network configuration labels correctly when in the cutter clean reminder warning state, suggesting a fault in how the product manages tasks under warning conditions.}
+        `;
+
+        const entries = data.trim().split('\n').map(entry => JSON.parse(entry.replace(/(\w+):/g, '"$1":').replace(/'/g, '"')));
+
+        const table = document.createElement('table');
+        const thead = document.createElement('thead');
+        const tbody = document.createElement('tbody');
+
+        thead.innerHTML = `
+            <tr>
+                <th>Suite</th>
+                <th>Module</th>
+                <th>Synopsis of the test Failed</th>
+                <th>Test name</th>
+                <th>Failure category</th>
+                <th>Reason for categorisation</th>
+            </tr>
+        `;
+
+        entries.forEach(entry => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${entry.Suite}</td>
+                <td>${entry.Module}</td>
+                <td>${entry.Synopsis}</td>
+                <td>${entry.test_name}</td>
+                <td>${entry.Failure_category}</td>
+                <td>${entry.Reason}</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        reportContent.appendChild(table);
+    </script>
+</body>
+</html>
